@@ -15,18 +15,18 @@ fetch("https://fakestoreapi.com/users")
 
                 <div class="card-body ">
 
-                    <div class="circle"> 👲🏻 
+                    <div class="circle fw-bold d-flex align-items-center justify-content-center text-primary mb-3">
+                    ${user.name.firstname[0].toUpperCase()}${user.name.lastname[0].toUpperCase()}
                     </div>
                 
                     <h5 class="card-title">
-                        ${user.name.firstname} ${user.name.lastname}
+                        ${user.name.firstname.toUpperCase()} ${user.name.lastname.toUpperCase()}
                     </h5>
 
                     <p class="text-muted">@${user.username}</p>
                     <p class="mb-1">📧</b> ${user.email}</p>
                     <p class="mb-1">📞${user.phone}</p>
                     <p class="mb-1">📍${user.address.city}</p>
-
                 </div>
             </div>
         </div>
